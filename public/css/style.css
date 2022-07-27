@@ -5,8 +5,17 @@ body {
   background: #99E2D0;
 }
 
-h1 {
-  color: #9356DC;
+.header {
+  background: #9356DC;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header__logo {
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

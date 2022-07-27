@@ -6,6 +6,16 @@ body {
 	background: $colour-tertiary;
 }
 
-h1 {
-	color: $colour-primary;
+.header {
+	background: $colour-primary;
+	max-width: 1300px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	&__logo {
+		height: 50px;
+	}
 }
