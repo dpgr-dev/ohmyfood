@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+body {
+  box-sizing: border-box;
+  font-family: "Raleway";
+  background: #99E2D0;
+}
+
+h1 {
+  color: #9356DC;
+}
+
+/*# sourceMappingURL=style.css.map */
