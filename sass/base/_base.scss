@@ -4,12 +4,12 @@ body {
 	box-sizing: border-box;
 	font-family: 'Raleway';
 	background: $colour-tertiary;
+	max-width: 1300px;
+	margin: auto;
 }
 
 .header {
 	background: $colour-primary;
-	max-width: 1300px;
-	margin: auto;
 	display: flex;
 	justify-content: center;
 	padding-top: 20px;
@@ -17,5 +17,15 @@ body {
 
 	&__logo {
 		height: 50px;
+	}
+}
+
+.location {
+	background: $colour-secondary;
+	display: flex;
+	justify-content: center;
+
+	&__icon {
+		margin: 15px 10px;
 	}
 }
