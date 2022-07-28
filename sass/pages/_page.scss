@@ -1,0 +1,42 @@
+.page {
+	box-sizing: border-box;
+	font-family: 'Raleway';
+	background: $colour-tertiary;
+	max-width: 1300px;
+	margin: auto;
+}
+
+.page__header {
+	background: $colour-primary;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	&--return {
+		height: 100px;
+		margin-left: 50px;
+	}
+
+	&--logo {
+		height: 50px;
+	}
+}
+
+.page__main {
+	background: $colour-secondary;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&--image {
+		height: 200px;
+	}
+
+	&--order-button {
+		background: $colour-primary;
+		max-width: 400px;
+		height: 20px;
+		margin-bottom: 20px
+	}
+}

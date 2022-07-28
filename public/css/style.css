@@ -109,4 +109,43 @@ body {
   text-decoration: underline;
 }
 
+.page {
+  box-sizing: border-box;
+  font-family: "Raleway";
+  background: #99E2D0;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.page__header {
+  background: #9356DC;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.page__header--return {
+  height: 100px;
+  margin-left: 50px;
+}
+.page__header--logo {
+  height: 50px;
+}
+
+.page__main {
+  background: #FF79DA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page__main--image {
+  height: 200px;
+}
+.page__main--order-button {
+  background: #9356DC;
+  max-width: 400px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
