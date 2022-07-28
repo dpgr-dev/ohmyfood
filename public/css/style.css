@@ -2,13 +2,12 @@
 body {
   box-sizing: border-box;
   font-family: "Raleway";
-  background: #99E2D0;
   max-width: 1300px;
   margin: auto;
 }
 
 .header {
-  background: #9356DC;
+  background-color: #F0F3F4;
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -19,7 +18,7 @@ body {
 }
 
 .location {
-  background: #FF79DA;
+  background-color: #E5E7E9;
   display: flex;
   justify-content: center;
 }
@@ -28,38 +27,49 @@ body {
 }
 
 .exploration {
-  background: #9356DC;
+  background-color: #F0F3F4;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .exploration__button {
-  background: #FF79DA;
+  background-color: #9356DC;
   max-width: 400px;
-  height: 20px;
+  height: 40px;
+  padding: 20px 20px 0 20px;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .functioning {
-  background: #FF79DA;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .functioning__step {
   display: flex;
-  background: #9356DC;
+  background-color: #F0F3F4;
   max-width: 400px;
-  height: 20px;
+  height: 40px;
+  padding: 20px 20px 0 20px;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
+.restaurants {
+  background-color: #F0F3F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .restaurants__card {
-  background: #9356DC;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 20px;
+  border-radius: 15px 15px 15px 15px;
 }
 .restaurants__card a {
   color: black;
@@ -69,13 +79,13 @@ body {
   transform: scale(1.02);
 }
 .restaurants__card--figure {
-  margin: -5px;
+  margin: 0px;
 }
 .restaurants__card--figure-img {
   object-fit: cover;
-  height: 100px;
+  height: 150px;
   max-height: 100%;
-  width: 100%;
+  width: 400px;
   max-width: 100%;
   border-radius: 15px 15px 0 0;
 }
@@ -89,20 +99,25 @@ body {
   margin: 5px 0 0 5px;
 }
 .restaurants__card--grade-icon[data-active=true] {
-  color: #0065FC;
+  color: #9356DC;
 }
 .restaurants__card--icon[data-active=false] {
   color: #F2F2F2;
 }
 
 .footer {
+  background-color: #44484B;
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
+}
+.footer h3 {
+  color: white;
 }
 .footer--link {
   display: block;
   margin: 10px 0;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .footer--link:hover {
@@ -112,13 +127,13 @@ body {
 .page {
   box-sizing: border-box;
   font-family: "Raleway";
-  background: #99E2D0;
+  background: #9356DC;
   max-width: 1300px;
   margin: auto;
 }
 
 .page__header {
-  background: #9356DC;
+  background: #F0F3F4;
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -133,7 +148,7 @@ body {
 }
 
 .page__main {
-  background: #FF79DA;
+  background: #E5E7E9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,7 +157,7 @@ body {
   height: 200px;
 }
 .page__main--order-button {
-  background: #9356DC;
+  background: #F0F3F4;
   max-width: 400px;
   height: 20px;
   margin-bottom: 20px;
