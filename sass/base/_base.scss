@@ -58,3 +58,53 @@ body {
 		margin-bottom: 20px
 	}
 }
+
+.restaurants__card {
+	background: $colour-primary;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	&--figure {
+		margin: -5px;
+	}
+
+	&--figure-img {
+		object-fit: cover;
+		height: 100px;
+		max-height: 100%;
+		width: 100%;
+		max-width: 100%;
+		border-radius: 15px 15px 0 0;
+	}
+
+	&--figure-title {
+		margin: 5px 10px 0 10px;
+	}
+
+	&--desc	{
+		margin: 10px 0 0 5px;
+	}
+
+	&--grade {
+		margin: 5px 0 0 5px;
+	}
+
+	&--grade-icon[data-active=true] {
+		color: #0065FC;
+	}
+
+	&--icon[data-active=false] {
+		color: #F2F2F2;
+	}
+}
