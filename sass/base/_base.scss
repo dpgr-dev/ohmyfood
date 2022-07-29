@@ -15,7 +15,7 @@ body {
 	padding-bottom: 20px;
 
 	&__logo {
-		height: 50px;
+		height: 40px;
 	}
 }
 
@@ -38,10 +38,14 @@ body {
 	&__button {
 		background-color: $colour-tertiary;
 		max-width: 400px;
-		height: 40px;
-		padding: 20px 20px 0 20px;
+		height: 30px;
+		padding: 0px 15px 20px 15px;
 		margin-bottom: 20px;
 		border-radius: 20px;
+
+		&--text {
+			color: white;
+		}
 	}
 }
 
@@ -63,7 +67,7 @@ body {
 	&__step {
 		display: flex;
 		background-color: $colour-primary;
-		min-width: 260px;
+		min-width: 220px;
 		height: 40px;
 		padding: 20px 20px 0 20px;
 		margin-bottom: 20px;
@@ -89,9 +93,17 @@ body {
 
 .restaurants {
 	background-color: $colour-primary;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+	&__title {
+		padding-top: 20px;
+		margin-left: 20%;
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	&__card {
 		background-color: white;
@@ -119,17 +131,24 @@ body {
 			object-fit: cover;
 			height: 150px;
 			max-height: 100%;
-			width: 400px;
+			width: 300px;
 			max-width: 100%;
 			border-radius: 15px 15px 0 0;
 		}
 
 		&--figure-title {
-			margin: 5px 10px 0 10px;
+			margin: 5px 10px 0 5%;
+		}
+
+		&--footer {
+			display: flex;
+			justify-content: space-between;
+			padding-left: 5%;
+			padding-right: 5%;
 		}
 
 		&--desc	{
-			margin: 10px 0 0 5px;
+			margin: 10px 0 10px 0;
 		}
 
 		&--grade {
@@ -150,7 +169,7 @@ body {
 	background-color: $colour-footer;
 	display: flex;
 	flex-direction: column;
-	padding-left: 40px;
+	padding-left: 20%;
 
 	h3 {
 		color: white;

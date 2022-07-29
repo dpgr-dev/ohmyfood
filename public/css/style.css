@@ -14,7 +14,7 @@ body {
   padding-bottom: 20px;
 }
 .header__logo {
-  height: 50px;
+  height: 40px;
 }
 
 .location {
@@ -35,10 +35,13 @@ body {
 .exploration__button {
   background-color: #9356DC;
   max-width: 400px;
-  height: 40px;
-  padding: 20px 20px 0 20px;
+  height: 30px;
+  padding: 0px 15px 20px 15px;
   margin-bottom: 20px;
   border-radius: 20px;
+}
+.exploration__button--text {
+  color: white;
 }
 
 .functioning {
@@ -56,7 +59,7 @@ body {
 .functioning__step {
   display: flex;
   background-color: #F0F3F4;
-  min-width: 260px;
+  min-width: 220px;
   height: 40px;
   padding: 20px 20px 0 20px;
   margin-bottom: 20px;
@@ -79,6 +82,12 @@ body {
 
 .restaurants {
   background-color: #F0F3F4;
+}
+.restaurants__title {
+  padding-top: 20px;
+  margin-left: 20%;
+}
+.restaurants__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,15 +115,21 @@ body {
   object-fit: cover;
   height: 150px;
   max-height: 100%;
-  width: 400px;
+  width: 300px;
   max-width: 100%;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__card--figure-title {
-  margin: 5px 10px 0 10px;
+  margin: 5px 10px 0 5%;
+}
+.restaurants__card--footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .restaurants__card--desc {
-  margin: 10px 0 0 5px;
+  margin: 10px 0 10px 0;
 }
 .restaurants__card--grade {
   margin: 5px 0 0 5px;
@@ -130,7 +145,7 @@ body {
   background-color: #44484B;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
+  padding-left: 20%;
 }
 .footer h3 {
   color: white;
