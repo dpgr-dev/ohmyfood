@@ -14,7 +14,7 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 
-	&__logo {
+	&-logo {
 		height: 40px;
 	}
 }
@@ -24,7 +24,7 @@ body {
 	display: flex;
 	justify-content: center;
 
-	&__icon {
+	&-icon {
 		margin: 15px 10px;
 	}
 }
@@ -35,7 +35,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 
-	&__button {
+	&-button {
 		background-color: $colour-tertiary;
 		max-width: 400px;
 		height: 30px;
@@ -43,7 +43,7 @@ body {
 		margin-bottom: 20px;
 		border-radius: 20px;
 
-		&--text {
+		&-text {
 			color: white;
 		}
 	}
@@ -53,18 +53,18 @@ body {
 
 	background-color: white;
 
-	&__title {
+	&-title {
 		margin-left: 20%;
 	}
 
-	&__steps {
+	&-steps {
 		display: flex;
 		flex-direction: column;
 		margin-left: 20%;
 		margin-right: 20%;
 	}
 
-	&__step {
+	&-step {
 		display: flex;
 		background-color: $colour-primary;
 		min-width: 220px;
@@ -73,7 +73,7 @@ body {
 		margin-bottom: 20px;
 		border-radius: 20px;
 
-		&--stage-box {
+		&-stagebox {
 			display: flex;
 			align-items: center;
 			background-color: $colour-tertiary;
@@ -84,7 +84,7 @@ body {
 			margin-right: 20px;
 		}
 
-		&--icon-box {
+		&-iconbox {
 			margin-top: 5px;
 			min-width: 40px;
 		}
@@ -94,18 +94,18 @@ body {
 .restaurants {
 	background-color: $colour-primary;
 
-	&__title {
+	&-title {
 		padding-top: 20px;
 		margin-left: 20%;
 	}
 
-	&__cards {
+	&-cards {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	&__card {
+	&-card {
 		background-color: white;
 		display: flex;
 		flex-wrap: wrap;
@@ -123,44 +123,44 @@ body {
 			transform: scale(1.02);
 		}
 
-		&--figure {
+		&-figure {
 			margin: 0px;
+
+			&-img {
+				object-fit: cover;
+				height: 150px;
+				max-height: 100%;
+				width: 300px;
+				max-width: 100%;
+				border-radius: 15px 15px 0 0;
+			}
+
+			&-title {
+				margin: 5px 10px 0 5%;
+			}
 		}
 
-		&--figure-img {
-			object-fit: cover;
-			height: 150px;
-			max-height: 100%;
-			width: 300px;
-			max-width: 100%;
-			border-radius: 15px 15px 0 0;
-		}
-
-		&--figure-title {
-			margin: 5px 10px 0 5%;
-		}
-
-		&--footer {
+		&-footer {
 			display: flex;
 			justify-content: space-between;
 			padding-left: 5%;
 			padding-right: 5%;
-		}
 
-		&--desc	{
-			margin: 10px 0 10px 0;
-		}
+			&-desc {
+				margin: 10px 0 10px 0;
+			}
 
-		&--grade {
-			margin: 5px 0 0 5px;
-		}
+			&-grade {
+				margin: 5px 0 0 5px;
 
-		&--grade-icon[data-active=true] {
-			color: $colour-tertiary;
-		}
+				&-grade-icon[data-active=true] {
+					color: $colour-tertiary;
+				}
 
-		&--icon[data-active=false] {
-			color: #F2F2F2;
+				&-icon[data-active=false] {
+					color: #F2F2F2;
+				}
+			}
 		}
 	}
 }
@@ -171,11 +171,11 @@ body {
 	flex-direction: column;
 	padding-left: 20%;
 
-	h3 {
+	&-title {
 		color: white;
 	}
 
-	&--link {
+	&-link {
 		display: block;
 		margin: 10px 0;
 		color: white;

@@ -13,7 +13,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.header__logo {
+.header-logo {
   height: 40px;
 }
 
@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.location__icon {
+.location-icon {
   margin: 15px 10px;
 }
 
@@ -32,7 +32,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.exploration__button {
+.exploration-button {
   background-color: #9356DC;
   max-width: 400px;
   height: 30px;
@@ -40,23 +40,23 @@ body {
   margin-bottom: 20px;
   border-radius: 20px;
 }
-.exploration__button--text {
+.exploration-button-text {
   color: white;
 }
 
 .functioning {
   background-color: white;
 }
-.functioning__title {
+.functioning-title {
   margin-left: 20%;
 }
-.functioning__steps {
+.functioning-steps {
   display: flex;
   flex-direction: column;
   margin-left: 20%;
   margin-right: 20%;
 }
-.functioning__step {
+.functioning-step {
   display: flex;
   background-color: #F0F3F4;
   min-width: 220px;
@@ -65,7 +65,7 @@ body {
   margin-bottom: 20px;
   border-radius: 20px;
 }
-.functioning__step--stage-box {
+.functioning-step-stagebox {
   display: flex;
   align-items: center;
   background-color: #9356DC;
@@ -75,7 +75,7 @@ body {
   margin-left: -35px;
   margin-right: 20px;
 }
-.functioning__step--icon-box {
+.functioning-step-iconbox {
   margin-top: 5px;
   min-width: 40px;
 }
@@ -83,16 +83,16 @@ body {
 .restaurants {
   background-color: #F0F3F4;
 }
-.restaurants__title {
+.restaurants-title {
   padding-top: 20px;
   margin-left: 20%;
 }
-.restaurants__cards {
+.restaurants-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.restaurants__card {
+.restaurants-card {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -101,17 +101,17 @@ body {
   margin-bottom: 20px;
   border-radius: 15px 15px 15px 15px;
 }
-.restaurants__card a {
+.restaurants-card a {
   color: black;
   text-decoration: none;
 }
-.restaurants__card:hover {
+.restaurants-card:hover {
   transform: scale(1.02);
 }
-.restaurants__card--figure {
+.restaurants-card-figure {
   margin: 0px;
 }
-.restaurants__card--figure-img {
+.restaurants-card-figure-img {
   object-fit: cover;
   height: 150px;
   max-height: 100%;
@@ -119,25 +119,25 @@ body {
   max-width: 100%;
   border-radius: 15px 15px 0 0;
 }
-.restaurants__card--figure-title {
+.restaurants-card-figure-title {
   margin: 5px 10px 0 5%;
 }
-.restaurants__card--footer {
+.restaurants-card-footer {
   display: flex;
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
 }
-.restaurants__card--desc {
+.restaurants-card-footer-desc {
   margin: 10px 0 10px 0;
 }
-.restaurants__card--grade {
+.restaurants-card-footer-grade {
   margin: 5px 0 0 5px;
 }
-.restaurants__card--grade-icon[data-active=true] {
+.restaurants-card-footer-grade-grade-icon[data-active=true] {
   color: #9356DC;
 }
-.restaurants__card--icon[data-active=false] {
+.restaurants-card-footer-grade-icon[data-active=false] {
   color: #F2F2F2;
 }
 
@@ -147,16 +147,16 @@ body {
   flex-direction: column;
   padding-left: 20%;
 }
-.footer h3 {
+.footer-title {
   color: white;
 }
-.footer--link {
+.footer-link {
   display: block;
   margin: 10px 0;
   color: white;
   text-decoration: none;
 }
-.footer--link:hover {
+.footer-link:hover {
   text-decoration: underline;
 }
 
@@ -167,43 +167,40 @@ body {
   max-width: 1300px;
   margin: auto;
 }
-
-.page__header {
+.page-header {
   background: #F0F3F4;
   display: flex;
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.page__header--return {
+.page-header-return {
   height: 100px;
   margin-left: 50px;
 }
-.page__header--logo {
+.page-header-logo {
   height: 50px;
 }
-
-.page__main {
+.page-main {
   background: #E5E7E9;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.page__main--image {
+.page-main-image {
   height: 200px;
 }
-.page__main--order-button {
+.page-main-orderbutton {
   background: #F0F3F4;
   max-width: 400px;
   height: 20px;
   margin-bottom: 20px;
 }
 
-.menuPart__title {
+.menupart-title {
   margin-left: 20px;
 }
-
-.menuPart__item {
+.menupart-item {
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -211,19 +208,19 @@ body {
   margin-bottom: 10px;
   max-width: 400px;
 }
-.menuPart__item--core {
+.menupart-item-core {
   background-color: green;
   width: 80%;
   border-radius: 20px 0 0 20px;
 }
-.menuPart__item--title {
+.menupart-item-title {
   margin-left: 10px;
 }
-.menuPart__item--description {
+.menupart-item-description {
   display: flex;
   margin-left: 10px;
 }
-.menuPart__item--checked {
+.menupart-item-checked {
   background-color: red;
   border-radius: 0 20px 20px 0;
   width: 20%;
