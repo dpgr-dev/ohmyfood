@@ -40,3 +40,37 @@
 		margin-bottom: 20px
 	}
 }
+
+.menuPart__title {
+	margin-left: 20px;
+}
+
+.menuPart__item {
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	max-width: 400px;
+
+	&--core {
+		background-color: green;
+		width: 80%;
+		border-radius: 20px 0 0 20px;
+	}
+
+	&--title {
+		margin-left: 10px;
+	}
+
+	&--description {
+		display: flex;
+		margin-left: 10px;
+	}
+
+	&--checked {
+		background-color: red;
+		border-radius: 0 20px 20px 0;
+		width: 20%;
+	}
+}

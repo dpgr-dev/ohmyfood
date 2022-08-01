@@ -199,4 +199,34 @@ body {
   margin-bottom: 20px;
 }
 
+.menuPart__title {
+  margin-left: 20px;
+}
+
+.menuPart__item {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+.menuPart__item--core {
+  background-color: green;
+  width: 80%;
+  border-radius: 20px 0 0 20px;
+}
+.menuPart__item--title {
+  margin-left: 10px;
+}
+.menuPart__item--description {
+  display: flex;
+  margin-left: 10px;
+}
+.menuPart__item--checked {
+  background-color: red;
+  border-radius: 0 20px 20px 0;
+  width: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */
