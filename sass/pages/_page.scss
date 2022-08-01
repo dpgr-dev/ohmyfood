@@ -8,17 +8,18 @@
 	&-header {
 		background: $colour-primary;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
+		align-items: center;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		padding-left: 10%;
 
 		&-return {
-			height: 100px;
-			margin-left: 50px;
 		}
 
 		&-logo {
-			height: 50px;
+			height: 40px;
+			margin-right: 20%;
 		}
 	}
 
@@ -28,52 +29,43 @@
 		flex-direction: column;
 		justify-content: center;
 
-		&-image {
-			height: 200px;
+		&-header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&-image {
+				height: 200px;
+				width: 100%;
+				margin-bottom: -20px;
+			}
+
+			&-title {
+				background-color: $colour-secondary;
+				width: 100%;
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 40px 40px 0 0;
+			}
 		}
 
 		&-orderbutton {
-			background: $colour-primary;
-			max-width: 400px;
-			height: 20px;
-			margin-bottom: 20px
-		}
-	}
-}
-
-.menupart {
-
-	&-title {
-		margin-left: 20px;
-	}
-
-	&-item {
-		background-color: white;
-		border-radius: 20px;
-		display: flex;
-		margin-left: 20px;
-		margin-bottom: 10px;
-		max-width: 400px;
-
-		&-core {
-			background-color: green;
-			width: 80%;
-			border-radius: 20px 0 0 20px;
-		}
-
-		&-title {
-			margin-left: 10px;
-		}
-
-		&-description {
+			background: $colour-tertiary;
+			max-width: 50%;
+			height: 40px;
+			margin-left: 20%;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			border-radius: 30px;
 			display: flex;
-			margin-left: 10px;
-		}
+			justify-content: center;
+			align-items: center;
 
-		&-checked {
-			background-color: red;
-			border-radius: 0 20px 20px 0;
-			width: 20%;
+			&-text {
+				color: white;
+			}
 		}
 	}
 }
