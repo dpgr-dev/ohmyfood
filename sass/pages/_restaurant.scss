@@ -1,12 +1,12 @@
 .page {
   box-sizing: border-box;
   font-family: 'Raleway';
-  background: $colour-tertiary;
+  background: $colour-primary;
   max-width: 1300px;
   margin: auto;
 
   &-header {
-    background: $colour-primary;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@
   }
 
   &-main {
-    background: $colour-secondary;
+    background: $colour-exploration;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@
       }
 
       &-title {
-        background-color: $colour-secondary;
+        background-color: $colour-exploration;
         width: 100%;
         height: 100px;
         display: flex;
@@ -52,7 +52,7 @@
     }
 
     &-orderbutton {
-      background: $colour-tertiary;
+      background: $colour-primary;
       max-width: 50%;
       height: 40px;
       margin-left: 20%;

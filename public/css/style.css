@@ -316,7 +316,7 @@ html {
 }
 
 .footer {
-  background-color: #44484B;
+  background-color: rgb(53, 53, 53);
   display: flex;
   flex-direction: column;
   padding-left: 20%;
@@ -381,7 +381,7 @@ html {
   width: 20%;
 }
 .header {
-  background-color: #F0F3F4;
+  background-color: white;
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -392,7 +392,7 @@ html {
 }
 
 .location {
-  background-color: #E5E7E9;
+  background-color: rgb(234, 234, 234);
   display: flex;
   justify-content: center;
 }
@@ -401,7 +401,7 @@ html {
 }
 
 .exploration {
-  background-color: #F0F3F4;
+  background-color: rgb(246, 246, 246);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,7 +410,7 @@ html {
   text-decoration: none;
 }
 .exploration-button {
-  background-image: linear-gradient(135deg, #9356DC, red);
+  background-image: linear-gradient(135deg, #9356DC, #FF79DA);
   cursor: pointer;
   max-width: 400px;
   height: 30px;
@@ -441,7 +441,7 @@ html {
 }
 .functioning-step {
   display: flex;
-  background-color: #F0F3F4;
+  background-color: rgb(246, 246, 246);
   min-width: 220px;
   height: 40px;
   padding: 20px 20px 0 20px;
@@ -464,7 +464,7 @@ html {
 }
 
 .restaurants {
-  background-color: #F0F3F4;
+  background-color: rgb(246, 246, 246);
 }
 .restaurants-title {
   padding-top: 20px;
@@ -532,7 +532,7 @@ html {
   margin: auto;
 }
 .page-header {
-  background: #F0F3F4;
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -545,7 +545,7 @@ html {
   margin-right: 20%;
 }
 .page-main {
-  background: #E5E7E9;
+  background: rgb(246, 246, 246);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -561,7 +561,7 @@ html {
   margin-bottom: -20px;
 }
 .page-main-header-title {
-  background-color: #E5E7E9;
+  background-color: rgb(246, 246, 246);
   width: 100%;
   height: 100px;
   display: flex;

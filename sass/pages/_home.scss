@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  background-color: $colour-primary;
+  background-color: white;
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -15,7 +15,7 @@
 }
 
 .location {
-  background-color: $colour-secondary;
+  background-color: $colour-location;
   display: flex;
   justify-content: center;
 
@@ -25,7 +25,7 @@
 }
 
 .exploration {
-  background-color: $colour-primary;
+  background-color: $colour-exploration;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@
   }
 
   &-button {
-    background-image: linear-gradient(135deg, $colour-tertiary, red);
+    background-image: linear-gradient(135deg, $colour-primary, $colour-secondary);
     cursor: pointer;
     max-width: 400px;
     height: 30px;
@@ -72,7 +72,7 @@
 
   &-step {
     display: flex;
-    background-color: $colour-primary;
+    background-color: $colour-exploration;
     min-width: 220px;
     height: 40px;
     padding: 20px 20px 0 20px;
@@ -82,7 +82,7 @@
     &-stagebox {
       display: flex;
       align-items: center;
-      background-color: $colour-tertiary;
+      background-color: $colour-primary;
       padding: 12px;
       border-radius: 15px;
       margin-bottom: 10px;
@@ -98,7 +98,7 @@
 }
 
 .restaurants {
-  background-color: $colour-primary;
+  background-color: $colour-exploration;
 
   &-title {
     padding-top: 20px;
@@ -160,7 +160,7 @@
         margin: 5px 0 0 5px;
 
         &-icon[data-active=true] {
-          color: $colour-tertiary;
+          color: $colour-primary;
         }
 
         &-icon[data-active=false] {
