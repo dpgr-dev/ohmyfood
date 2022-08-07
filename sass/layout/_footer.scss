@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+  background-color: $colour-footer;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+
+  &-title {
+    color: white;
+  }
+
+  &-link {
+    display: block;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

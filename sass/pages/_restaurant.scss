@@ -1,0 +1,71 @@
+.page {
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  background: $colour-tertiary;
+  max-width: 1300px;
+  margin: auto;
+
+  &-header {
+    background: $colour-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+
+    &-return {
+    }
+
+    &-logo {
+      height: 40px;
+      margin-right: 20%;
+    }
+  }
+
+  &-main {
+    background: $colour-secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-image {
+        height: 200px;
+        width: 100%;
+        margin-bottom: -20px;
+      }
+
+      &-title {
+        background-color: $colour-secondary;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px 40px 0 0;
+      }
+    }
+
+    &-orderbutton {
+      background: $colour-tertiary;
+      max-width: 50%;
+      height: 40px;
+      margin-left: 20%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-text {
+        color: white;
+      }
+    }
+  }
+}

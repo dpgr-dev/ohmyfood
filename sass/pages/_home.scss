@@ -1,0 +1,172 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.header {
+  background-color: $colour-primary;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &-logo {
+    height: 40px;
+  }
+}
+
+.location {
+  background-color: $colour-secondary;
+  display: flex;
+  justify-content: center;
+
+  &-icon {
+    margin: 15px 10px;
+  }
+}
+
+.exploration {
+  background-color: $colour-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-link {
+    text-decoration: none;
+  }
+
+  &-button {
+    background-image: linear-gradient(135deg, $colour-tertiary, red);
+    cursor: pointer;
+    max-width: 400px;
+    height: 30px;
+    padding: 1px 15px 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+    &:hover {
+      box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.5);
+      filter: brightness(1.75);
+    }
+
+    &-text {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.functioning {
+
+  background-color: white;
+
+  &-title {
+    margin-left: 20%;
+  }
+
+  &-steps {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  &-step {
+    display: flex;
+    background-color: $colour-primary;
+    min-width: 220px;
+    height: 40px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+    &-stagebox {
+      display: flex;
+      align-items: center;
+      background-color: $colour-tertiary;
+      padding: 12px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      margin-left: -35px;
+      margin-right: 20px;
+    }
+
+    &-iconbox {
+      margin-top: 5px;
+      min-width: 40px;
+    }
+  }
+}
+
+.restaurants {
+  background-color: $colour-primary;
+
+  &-title {
+    padding-top: 20px;
+    margin-left: 20%;
+  }
+
+  &-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-card {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 15px 15px;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &-figure {
+      margin: 0px;
+
+      &-img {
+        object-fit: cover;
+        height: 150px;
+        max-height: 100%;
+        width: 300px;
+        max-width: 100%;
+        border-radius: 15px 15px 0 0;
+      }
+
+      &-title {
+        margin: 5px 10px 0 5%;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5%;
+      padding-right: 5%;
+
+      &-desc {
+        margin: 10px 0 10px 0;
+      }
+
+      &-grade {
+        margin: 5px 0 0 5px;
+
+        &-icon[data-active=true] {
+          color: $colour-tertiary;
+        }
+
+        &-icon[data-active=false] {
+          color: #F2F2F2;
+        }
+      }
+    }
+  }
+}

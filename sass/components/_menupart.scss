@@ -1,60 +1,60 @@
 .menupart {
 
-	&-title {
-		margin-left: 40px;
-	}
+  &-title {
+    margin-left: 40px;
+  }
 
-	&-item {
-		background-color: white;
-		border-radius: 20px;
-		display: flex;
-		margin-left: 40px;
-		margin-bottom: 10px;
-		width: 80%;
-		height: 66px;
+  &-item {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 66px;
 
-		&:hover {
-			cursor: pointer;
-		}
+    &:hover {
+      cursor: pointer;
+    }
 
-		&-core {
-			background-color: white;
-			width: 80%;
-			border-radius: 20px 0 0 20px;
-		}
+    &-core {
+      background-color: white;
+      width: 80%;
+      border-radius: 20px 0 0 20px;
+    }
 
-		&-title {
-			margin-left: 10px;
-			margin-top: 10px;
-			margin-bottom: -5px;
-		}
+    &-title {
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: -5px;
+    }
 
-		&-description {
-			display: flex;
-			margin-left: 10px;
+    &-description {
+      display: flex;
+      margin-left: 10px;
 
-			&-text {
-				width: 88%;
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-			}
+      &-text {
+        width: 88%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
 
-			&-price {
-				font-weight: bold;
-			}
-		}
+      &-price {
+        font-weight: bold;
+      }
+    }
 
-		&-checked {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background-color: $colour-4;
-			border-radius: 0 20px 20px 0;
-			width: 20%;
+    &-checked {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $colour-4;
+      border-radius: 0 20px 20px 0;
+      width: 20%;
 
-			&-icon {
-			}
-		}
-	}
+      &-icon {
+      }
+    }
+  }
 }
