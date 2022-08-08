@@ -470,6 +470,17 @@ html {
   filter: brightness(2);
 }
 
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .restaurants {
   background-color: rgb(246, 246, 246);
 }
@@ -533,11 +544,19 @@ html {
 .restaurants-card-footer-grade {
   margin: 5px 0 0 5px;
 }
-.restaurants-card-footer-grade-icon[data-active=true] {
-  color: #9356DC;
+.restaurants-card-footer-grade-icon {
+  color: black;
+  cursor: pointer;
 }
-.restaurants-card-footer-grade-icon[data-active=false] {
-  color: #F2F2F2;
+.restaurants-card-footer-grade-icon:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .page {
