@@ -498,6 +498,15 @@ html {
 .restaurants-card:hover {
   transform: scale(1.02);
 }
+.restaurants-card-notification {
+  color: black;
+  background: #99E2D0;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 22%;
+  top: 90%;
+}
 .restaurants-card-figure {
   margin: 0px;
 }
