@@ -422,12 +422,11 @@ html {
   border-radius: 20px;
 }
 .exploration-button:hover {
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.5);
-  filter: brightness(1.75);
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.2);
 }
 .exploration-button-text {
   color: white;
-  font-weight: bold;
 }
 
 .functioning {
@@ -464,6 +463,11 @@ html {
 .functioning-step-iconbox {
   margin-top: 5px;
   min-width: 40px;
+}
+.functioning-step:hover {
+  cursor: pointer;
+  background-color: #FF79DA;
+  filter: brightness(2);
 }
 
 .restaurants {
