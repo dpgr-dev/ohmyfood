@@ -2,6 +2,25 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+.loader {
+  background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 3s forwards;
+
+  &-animation {
+    margin-top: 30%;
+  }
+}
+
 .header {
   background-color: white;
   display: flex;
