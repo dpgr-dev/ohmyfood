@@ -21,6 +21,14 @@
     opacity: 0;
   }
 }
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -359,52 +367,71 @@ html {
 .menupart-title {
   margin-left: 40px;
 }
+.menupart-items {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .menupart-item {
   background-color: white;
   border-radius: 20px;
-  display: flex;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  width: 80%;
-  height: 66px;
-}
-.menupart-item:hover {
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
   cursor: pointer;
-}
-.menupart-item-core {
-  background-color: white;
-  width: 80%;
-  border-radius: 20px 0 0 20px;
-}
-.menupart-item-title {
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: -5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  transition: padding-right 450ms ease-in-out;
+}
+.menupart-item h4 {
+  margin: 0;
+}
+.menupart-item:hover {
+  padding-right: 80px;
+}
+.menupart-item:hover .selection {
+  opacity: 1;
+  transform: translate(-50px);
+}
+.menupart-item:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 .menupart-item-description {
   display: flex;
-  margin-left: 10px;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em;
 }
-.menupart-item-description-text {
-  width: 88%;
-  overflow: hidden;
+.menupart-item-description p {
+  margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menupart-item-description-price {
-  font-weight: bold;
+.menupart-item-description span {
+  margin-right: 5px;
 }
-.menupart-item-checked {
+
+.selection {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
+  width: 8%;
   border-radius: 0 20px 20px 0;
-  width: 20%;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
 }
+.selection .fa-check-circle {
+  color: white;
+  transition: transform 500ms ease-in-out;
+}
+
 .loader {
   background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
   width: 100%;

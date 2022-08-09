@@ -4,56 +4,75 @@
     margin-left: 40px;
   }
 
+  &-items {
+  	padding-left: 5%;
+  	padding-right: 5%;
+  }
+
   &-item {
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    width: 80%;
-    height: 66px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+    position: relative;
+    cursor: pointer;
+    @include doted-text-on-overflow;
+    transition: padding-right 450ms ease-in-out;
+
+    & h4 {
+      margin: 0;
+    }
 
     &:hover {
-      cursor: pointer;
-    }
+      padding-right: 80px;
 
-    &-core {
-      background-color: white;
-      width: 80%;
-      border-radius: 20px 0 0 20px;
-    }
+      & .selection {
+        opacity: 1;
+        transform: translate(-50px);
+      }
 
-    &-title {
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: -5px;
-      @include doted-text-on-overflow;
+      & .fa-check-circle {
+        transform: rotate(360deg);
+      }
     }
 
     &-description {
       display: flex;
-      margin-left: 10px;
-
-      &-text {
-        width: 88%;
-        @include doted-text-on-overflow;
-      }
-
-      &-price {
-        font-weight: bold;
-      }
-    }
-
-    &-checked {
-      display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      background-color: $colour-tertiary;
-      border-radius: 0 20px 20px 0;
-      width: 20%;
+      line-height: 1.5em;
 
-      &-icon {
+      & p {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      & span {
+        margin-right: 5px;
       }
     }
+  }
+}
+
+.selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $colour-tertiary;
+  width: 8%;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+
+  & .fa-check-circle {
+    color: white;
+    transition: transform 500ms ease-in-out;
   }
 }
