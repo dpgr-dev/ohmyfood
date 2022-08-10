@@ -1,7 +1,5 @@
 .menupart {
 
-  animation: fadein 2s ease-in-out;
-
   &-title {
     margin-left: 40px;
 
@@ -20,6 +18,9 @@
   }
 
   &-item {
+    animation: appear .5s;
+    animation-fill-mode: both;
+    transform: scale(0);
     background-color: white;
     border-radius: 20px;
     margin: 10px;
@@ -64,6 +65,12 @@
         margin-right: 5px;
       }
     }
+  }
+}
+
+@for $i from 1 to 10 {
+  .mp-item-#{$i} {
+    animation-delay: #{$i/8}s;
   }
 }
 
