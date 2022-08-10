@@ -378,6 +378,12 @@ html {
 .menupart-title {
   margin-left: 40px;
 }
+.menupart-title-underline {
+  width: 80px;
+  border: 3px solid #99E2D0;
+  margin-top: -10px;
+  margin-left: 40px;
+}
 .menupart-items {
   padding-left: 5%;
   padding-right: 5%;
@@ -668,7 +674,7 @@ html {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 40px 40px 0 0;
 }
