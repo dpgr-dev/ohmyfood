@@ -537,6 +537,12 @@ html {
   flex-direction: column;
   align-items: center;
 }
+.exploration h2 {
+  text-align: center;
+}
+.exploration p {
+  text-align: center;
+}
 .exploration-link {
   text-decoration: none;
 }
@@ -680,7 +686,7 @@ html {
 .page {
   box-sizing: border-box;
   font-family: "Roboto";
-  background: #9356DC;
+  background: rgb(246, 246, 246);
   max-width: 1300px;
   margin: auto;
 }

@@ -70,7 +70,7 @@
 
 @for $i from 1 to 10 {
   .mp-item-#{$i} {
-    animation-delay: #{$i/8}s;
+    animation-delay: #{calc($i/8)}s;
   }
 }
 
