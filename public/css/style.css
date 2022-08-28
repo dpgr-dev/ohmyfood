@@ -379,6 +379,14 @@ html {
   text-decoration: underline;
 }
 
+.fa-utensils {
+  margin-right: 10px;
+}
+
+.fa-hands-helping {
+  margin-right: 10px;
+}
+
 .menupart-title {
   margin-left: 40px;
 }
