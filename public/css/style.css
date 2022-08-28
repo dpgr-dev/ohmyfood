@@ -412,7 +412,7 @@ html {
   margin: 0;
 }
 .menupart-item:hover {
-  padding-right: 80px;
+  padding-right: 17%;
 }
 .menupart-item:hover .selection {
   opacity: 1;
