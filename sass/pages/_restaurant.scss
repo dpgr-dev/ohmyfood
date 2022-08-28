@@ -24,6 +24,8 @@
   }
 
   &-main {
+    -webkit-box-shadow: 0px -11px 10px -1px rgba(0,0,0,0.62); 
+    box-shadow: 0px -11px 10px -8px rgba(0,0,0,0.62);
     background: $colour-exploration;
     display: flex;
     flex-direction: column;
