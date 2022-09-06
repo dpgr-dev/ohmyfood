@@ -4,8 +4,7 @@
 
 .footer {
   background-color: $colour-footer;
-  display: flex;
-  flex-direction: column;
+  @include display-flex-column;
   padding-left: 20%;
 
   &-title {

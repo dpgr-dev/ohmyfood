@@ -7,3 +7,18 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+@mixin display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin heart-animation {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
